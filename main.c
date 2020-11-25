@@ -17,7 +17,8 @@ int main(void)
 
 	while (1)
 	{
-		write(STDOUT_FILENO, "$ ", _strlen("$ "));
+		_putchar('$');
+		_putchar(' ');
 		user_input = get_user_input(oldpwd, newpwd);
 		if (user_input[0] == '\n' || user_input[0] == '\0')
 		{
