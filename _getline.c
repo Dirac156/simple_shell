@@ -11,6 +11,7 @@
 ssize_t _getline(char **buff, size_t *n, FILE *stream)
 {
 	char char_read[1024];
+
 	n = 0;
 	ssize_t i = 0;
 	(void)stream;

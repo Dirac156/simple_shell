@@ -14,6 +14,7 @@ int built_in_funcs(char **argv, char *old, char *new)
 	int return_v;
 
 	built_in func[2] = {{"env", _env}, {"cd", _cd}};
+
 	for (; func[i].command && i < 2; i++)
 	{
 		if (_strcmp(argv[0], func[i].command) == 1)

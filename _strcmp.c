@@ -12,6 +12,7 @@ int _strcmp(char *str, char *str2)
 	int a = 0;
 	int lenStr = _strlen(str);
 	int lenStr2 = _strlen(str);
+
 	if (lenStr == lenStr2)
 	{
 		while (a < lenStr)

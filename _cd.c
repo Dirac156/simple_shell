@@ -70,6 +70,7 @@ void swappwd(char *oldpwd, char *newpwd)
 void clean_memory(char *pwd)
 {
 	int i;
+
 	for (i = 0; pwd[i] != '\0'; i++)
 		pwd[i] = '\0';
 }
@@ -83,6 +84,7 @@ void clean_memory(char *pwd)
 void fill_memory(char *str, char *empty)
 {
 	int i;
+
 	for (i = 0; str[i] != '\0'; i++)
 		empty[i] = str[i];
 }

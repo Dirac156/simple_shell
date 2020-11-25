@@ -9,6 +9,7 @@
 int _env(char **argv)
 {
 	int i = 0;
+
 	if (_strcmp(argv[0], "env") == 1)
 	{
 		for (; environ[i] != NULL; i++)

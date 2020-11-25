@@ -14,6 +14,7 @@ char **tokenaization(char *str, char *old, char *new)
 	int len_str = _strlen(str);
 	char **tokens = (char **)malloc(sizeof(char *) * (len_str));
 	char *token;
+
 	if (!tokens)
 	{
 		write(2, "Cannot allocate memory", 22);

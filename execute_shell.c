@@ -10,6 +10,7 @@ void execute_shell(char **args, char *command)
 {
 	int status;
 	pid_t pid;
+
 	pid = fork();
 
 	if (pid == 0)
