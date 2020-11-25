@@ -1,8 +1,8 @@
-Simple_shell, manpage, 24-12-2020
+simple_shell, manpage, 24-12-2020
 
 .TH SIMPLE_SHELL 1
 .SH NAME
-Simple_shell \- write a shell program
+simple_shell \- write a shell program
 .SH SYNOPSIS
 B Simple_shell
 [ls]
@@ -10,10 +10,10 @@ B Simple_shell
 [-a]
 .br
 .SH DESCRIPTION
-.I Simple_shell
+.I simple_shell
 Takes commands from the keyboard and gives them to the Operating System to perform
 .IR simple_shell ,
-is taken from the user
+input is taken from the user
 .SH OPTIONS
 .TP
 .B \ls
