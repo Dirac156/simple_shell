@@ -1,0 +1,34 @@
+Simple_shell, manpage, 24-12-2020
+
+.TH SIMPLE_SHELL 1
+.SH NAME
+Simple_shell \- write a shell program
+.SH SYNOPSIS
+B Simple_shell
+[ls]
+[-l]
+[-a]
+.br
+.SH DESCRIPTION
+.I Simple_shell
+Takes commands from the keyboard and gives them to the Operating System to perform
+.IR simple_shell ,
+is taken from the user
+.SH OPTIONS
+.TP
+.B \ls
+Lists directory contents
+.TP
+.B \-l
+Lists directory contents in long format
+.SH FILES
+.TP
+.B ./hsh
+.TP
+.B ./main.c
+.SH BUGS
+No known bugs yet.
+.LP
+.I simple_shell
+.SH AUTHOR
+Dirac Murairi and Lilian Mokaya
