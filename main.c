@@ -20,7 +20,7 @@ int main(void)
 		_putchar('$');
 		_putchar(' ');
 		user_input = get_user_input(oldpwd, newpwd);
-		if (user_input[0] == '\n' || user_input[0] == '\0')
+		if (user_input && (user_input[0] == '\n' || user_input[0] == '\0'))
 		{
 			free(user_input);
 			continue;
@@ -28,7 +28,10 @@ int main(void)
 		else if (user_input != NULL)
 		{
 			tokens = tokenaization(user_input, oldpwd, newpwd);
+			if (tokens != NULL)
+			{
 			_stat(tokens, oldpwd, newpwd);
+			}
 		}
 	}
 	return (0);

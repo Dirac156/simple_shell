@@ -22,6 +22,10 @@ char **tokenaization(char *str, char *old, char *new)
 		free(new);
 		exit(EXIT_FAILURE);
 	}
+
+	if (str[0] == ' ')
+		return (NULL);
+		
 	token = strtok(str, s);
 	while (token != NULL)
 	{
