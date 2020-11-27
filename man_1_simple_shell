@@ -2,7 +2,7 @@
 .SH NAME
 simple_shell \- write a shell program
 .SH SYNOPSIS
-B Simple_shell
+Execute commands given by the user to the operating system.
 [ls]
 [-l]
 .br
@@ -30,14 +30,14 @@ Space or tab
 .TP
 .B name
 .TP
-A word that is made up of aiphanumeric characters and underscores
+A word that is made up of alphanumeric characters and underscores
 .TP
 .B word
 .TP
 A combination of characters taken as a single unit
 .SH RETURN VALUE
 .TP
-Return value for a command in our peogram is the exit status
+Return value for a command in our program is 0 when the program exit normally.
 .SH VARIABLES
 .TP
 .B OLDPWD
@@ -59,16 +59,26 @@ When a program is called it's given an array of strings called environment and t
 .RS
 .BR PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 .SH EXIT STATUS
-The exit status of an executed command  is  the value returned by the waitpid system call
+The exit status of an executed command  is  the value returned by the exit system call
 Shell builtin commands return a status of 0 (true) if successful, and non-zero(false) if an  error occurred  while execution.
 simple_shell itself returns the exit status of the last command executed, unless a syntax  error occurs, in which case it exits with a non-zero value.
-.SH OPTIONS
+.SH COMMANDS
 .TP
-.B \ls
+.B ls
 Lists directory contents
 .TP
-.B \-l
-Lists directory contents in long format
+    -l  Lists directory contents in long format
+.TP
+.B cd
+change the current directory.
+.TP
+    -   Go to the previous directory.
+.TP
+.B pwd
+Display the current working directory.
+.TP
+.B exit
+exit the shell.
 .SH FILES
 .TP
 .B ./hsh
