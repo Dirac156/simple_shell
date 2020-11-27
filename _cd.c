@@ -25,7 +25,7 @@ int _cd(char **args, char *oldpwd, char *newpwd)
 			getcwd(pwd, sizeof(pwd));
 			swappwd(pwd, oldpwd);
 			chdir(newpwd);
-			wrie(1, newpwd, _strlen(newpwd));
+			write(1, newpwd, _strlen(newpwd));
 			clean_memory(newpwd);
 		}
 		else
