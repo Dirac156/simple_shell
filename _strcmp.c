@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *_strcmp - function that compare if two strings are the same.
+ *_strcmp - function that compares if two strings are the same.
  *@str: The string to compare.
  *@str2: a string to compare.
- *Return: This function return 1 when they are the same and 0 otherwise.
+ *Return: This function returns 1 when they are the same and 0 when otherwise.
  */
 
 int _strcmp(char *str, char *str2)
