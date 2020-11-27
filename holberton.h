@@ -40,6 +40,7 @@ void fill_memory(char *str, char *empty);
 void change_directory(char *str, char *old);
 char *_strappend(char *str, char *str2, char *dest);
 char *_putchar(char);
+int _strlen_space(char *s);
 
 ssize_t _getline(char **buff, size_t *n, FILE *stream);
 int _exits(char **args, char *old, char *new);

@@ -11,7 +11,7 @@ char **tokenaization(char *str, char *old, char *new)
 {
 	int i = 0;
 	const char s[2] = " \n";
-	int len_str = _strlen(str);
+	int len_str = _strlen_space(str);
 	char **tokens = (char **)malloc(sizeof(char *) * (len_str));
 	char *token;
 
