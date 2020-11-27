@@ -13,7 +13,7 @@ int _strlen_space(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == ' ')
-      j++;
+			j++;
 	}
 	return (j);
 }
