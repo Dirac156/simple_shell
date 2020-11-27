@@ -2,8 +2,8 @@
 
 /**
  *_stat - this function checks if a function is a bash function or a shell
- *function and excute it.
- *@args : the arguments passed by the user.
+ *function and excutes it.
+ *@args: the arguments passed by the user.
  *@old: the memory allocation for the old path.
  *@new: the memory allocation for the new path.
  */
