@@ -22,7 +22,6 @@ int main(void)
 		user_input = get_user_input(oldpwd, newpwd);
 		if (user_input && (user_input[0] == '\n' || user_input[0] == '\0'))
 		{
-			free(user_input);
 			continue;
 		}
 		else if (user_input != NULL)
