@@ -5,7 +5,7 @@
  *@args : the arguments passed by the user.
  *@old: the old memory allocation.
  *@new: the new memory allocation.
- *Return: status when it's succeess full and 0 otherwise.
+ *Return: status when it's succeessfull and 0 when otherwise.
  */
 
 int _exits(char **args, char *old, char *new)
