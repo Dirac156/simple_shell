@@ -27,5 +27,10 @@ char *get_user_input(char *old, char *new)
 		free(buff);
 		return ("\n");
 	}
+	if (buff[0] == ' ')
+		{
+			free(buff);
+			return (NULL);
+		}
 	return (buff);
 }

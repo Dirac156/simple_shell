@@ -10,9 +10,19 @@
 
 int _exits(char **args, char *old, char *new)
 {
+	int i;
 	free(old);
 	free(new);
-	_free_double(args);
-	exit(EXIT_SUCCESS);
+	if (args[1] == NULL)
+	{
+		_free_double(args);
+		exit(EXIT_SUCCESS);
+	}
+	else
+	{
+		i = atoi(args[1]);
+		_free_double(args);
+		exit(i);
+	}
 	return (0);
 }

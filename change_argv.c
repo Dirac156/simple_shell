@@ -40,6 +40,7 @@ char *change_argv(char *argv)
 		}
 		token = strtok(NULL, ":");
 	}
+	free(newpath);
 	free(buff2);
 	free(buff);
 	return (NULL);

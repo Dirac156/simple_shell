@@ -22,7 +22,8 @@ void _stat(char **args, char *old, char *new)
 		else
 			write(2, "command not found\n", 19);
 
-		free(command);
+		if (command && _strcmp(command, args[0]) == 0)
+			free(command);
 	}
 	_free_double(args);
 }
