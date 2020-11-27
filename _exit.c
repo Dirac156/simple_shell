@@ -11,6 +11,7 @@
 int _exits(char **args, char *old, char *new)
 {
 	int i;
+
 	free(old);
 	free(new);
 	if (args[1] == NULL)
