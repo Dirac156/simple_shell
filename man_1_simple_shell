@@ -1,19 +1,66 @@
-simple_shell, manpage, 24-12-2020
-
-.TH SIMPLE_SHELL 1
+.TH "SIMPLE_SHELL" 1 "24-11-2020" "Command Manual"
 .SH NAME
 simple_shell \- write a shell program
 .SH SYNOPSIS
 B Simple_shell
 [ls]
 [-l]
-[-a]
 .br
 .SH DESCRIPTION
 .I simple_shell
-Takes commands from the keyboard and gives them to the Operating System to perform
-.IR simple_shell ,
-input is taken from the user
+Takes commands from the keyboard and gives them to the Operating System to perform using two modes:
+.TP
+.B Interactive Mode
+.TP
+Takes commands from standard input and executes it
+.TP
+.B Non-Interactive mode
+.TP
+Reads commands from a file sent to it through a pipe and executes it
+The simple_shell program is written using the C programming language
+.SH ARGUMENTS
+Arguments passed to it are not supported
+.SH INVOCATION
+To run the simple_shell program the ./hsh command is run
+.SH DEFINITIONS
+.TP
+.B blank
+.TP
+Space or tab
+.TP
+.B name
+.TP
+A word that is made up of aiphanumeric characters and underscores
+.TP
+.B word
+.TP
+A combination of characters taken as a single unit
+.SH RETURN VALUE
+.TP
+Return value for a command in our peogram is the exit status
+.SH VARIABLES
+.TP
+.B OLDPWD
+.TP
+The old working directory
+.TP
+.B NEWPWD
+The current working directory
+.TP
+.B PATH
+.TP
+Search path for commands
+.SH ENVIRONMENT
+When a program is called it's given an array of strings called environment and these environmental variables are defined for the current shell program
+.TP
+.SH EXAMPLE
+.PP
+.RS
+.BR PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+.SH EXIT STATUS
+The exit status of an executed command  is  the value returned by the waitpid system call
+Shell builtin commands return a status of 0 (true) if successful, and non-zero(false) if an  error occurred  while execution.
+simple_shell itself returns the exit status of the last command executed, unless a syntax  error occurs, in which case it exits with a non-zero value.
 .SH OPTIONS
 .TP
 .B \ls
@@ -26,9 +73,12 @@ Lists directory contents in long format
 .B ./hsh
 .TP
 .B ./main.c
+.SH SEE ALSO
+
 .SH BUGS
 No known bugs yet.
 .LP
 .I simple_shell
 .SH AUTHOR
-Dirac Murairi and Lilian Mokaya
+Dirac Murairi email: d.murairi@alustudent.com
+Liliane Nyasita email: lnyasita@gmail.com
