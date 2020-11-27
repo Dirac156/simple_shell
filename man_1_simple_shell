@@ -45,6 +45,7 @@ Return value for a command in our peogram is the exit status
 The old working directory
 .TP
 .B NEWPWD
+.TP
 The current working directory
 .TP
 .B PATH
