@@ -15,18 +15,22 @@ int main(void)
 	if (!oldpwd || !newpwd)
 		return (0);
 
-
-	user_input = get_user_input(oldpwd, newpwd);
-	if (user_input && (user_input[0] == '\n' || user_input[0] == '\0'))
+	while (1)
 	{
-		;
-	}
-	else if (user_input != NULL)
-	{
-		tokens = tokenaization(user_input, oldpwd, newpwd);
-		if (tokens != NULL)
+		_putchar('$');
+		_putchar(' ');
+		user_input = get_user_input(oldpwd, newpwd);
+		if (user_input && (user_input[0] == '\n' || user_input[0] == '\0'))
 		{
-		_stat(tokens, oldpwd, newpwd);
+			continue;
+		}
+		else if (user_input != NULL)
+		{
+			tokens = tokenaization(user_input, oldpwd, newpwd);
+			if (tokens != NULL)
+			{
+			_stat(tokens, oldpwd, newpwd);
+			}
 		}
 	}
 	return (0);
