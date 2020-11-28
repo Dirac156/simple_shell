@@ -28,9 +28,9 @@ char *get_user_input(char *old, char *new)
 		return ("\n");
 	}
 	if (buff[0] == ' ')
-		{
-			free(buff);
-			return (NULL);
-		}
+	{
+		free(buff);
+		return (NULL);
+	}
 	return (buff);
 }
